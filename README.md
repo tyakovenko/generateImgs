@@ -81,9 +81,9 @@ All of the averages are calculated based on the 10 epochs with the images includ
 
 | Epochs  | Generator Loss | Discriminator Loss | Training Time (seconds) | Image |
 |:-------:|:--------------:|:------------------:|:-----------------------:| :-----------------------:|
-| 1 - 10  |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010_mnist.png)
-| 11 - 20 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010_mnist.png)
-| 21 - 30 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010_mnist.png)
+| 1 - 10  |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010.png)
+| 11 - 20 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0020.png)
+| 21 - 30 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0030.png)
 | 31 - 40 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010_mnist.png)
 | 41 - 50 |       NA       |         NA         |           NA            | ![imgNumbers](image_at_epoch_0010_mnist.png)
 
@@ -96,11 +96,11 @@ Below is the detailed description of each epoch metrics.
 |      3       |      1.35      |        0.88        |           512           |
 |      4       |      2.04      |        0.82        |           541           |
 |      5       |      1.06      |        1.03        |           475           |
-|      6!      |       hi       |        1.26        |           359           |
-|      7       |    **1.26**    |        1.04        |           436           |
-|      8       |      1.25      |        0.96        |         **455**         |
+|      6       |      1.15      |        1.06        |           503           |
+|      7       |      0.96      |        1.16        |           514           |
+|      8       |      0.85      |        1.17        |           480           |
 |      9       |      0.98      |        1.24        |           406           |
-|      10      |      1.08      |        1.24        |           348           |
+|     10!      |      1.37      |        1.22        |           480           |
 |      11      |      3.28      |        0.12        |           554           |
 |      12      |      1.22      |        0.83        |           555           |
 |      13      |      1.35      |        0.88        |           512           |
@@ -115,7 +115,7 @@ Below is the detailed description of each epoch metrics.
 |      22      |      1.22      |        0.83        |           555           |
 |      23      |      1.35      |        0.88        |           512           |
 |      24      |      2.04      |        0.82        |           541           |
-|      25      |      1.06      |        1.03        |      475                |
+|      25      |      1.06      |        1.03        |           475           |
 |      26      |       hi       |        1.26        |           359           |
 |      27      |    **1.26**    |        1.04        |           436           |
 |      28      |      1.25      |        0.96        |         **455**         |
@@ -125,7 +125,7 @@ Below is the detailed description of each epoch metrics.
 |      32      |      1.22      |        0.83        |           555           |
 |      33      |      1.35      |        0.88        |           512           |
 |      34      |      2.04      |        0.82        |           541           |
-|      35      |      1.06      |        1.03        |      475                |
+|      35      |      1.06      |        1.03        |           475           |
 |      36      |       hi       |        1.26        |           359           |
 |      37      |    **1.26**    |        1.04        |           436           |
 |      38      |      1.25      |        0.96        |         **455**         |
@@ -135,14 +135,18 @@ Below is the detailed description of each epoch metrics.
 |      42      |      1.22      |        0.83        |           555           |
 |      43      |      1.35      |        0.88        |           512           |
 |      44      |      2.04      |        0.82        |           541           |
-|      45      |      1.06      |        1.03        |      475                |
+|      45      |      1.06      |        1.03        |           475           |
 |      46      |       hi       |        1.26        |           359           |
 |      47      |    **1.26**    |        1.04        |           436           |
 |      48      |      1.25      |        0.96        |         **455**         |
 |      49      |      0.98      |        1.24        |           406           |
 |      50      |      1.08      |        1.24        |           348           |
 
+When compared to the MNIST dataset, the generator loss is higher while the discriminator loss tends to be lower in the earlier epochs. 
+However, as the epochs progressed, the losses lowered. When compared to the MNIST set, the training time is longer due to the images being more complex.
 
+Below are the visualizations of the training and discriminator losses for each of the epochs. 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ### Generative AI Use Disclaimer
 Some of the code was generated using Gemini. All of the final code in the assignment was carefully reviewed and edited to ensure correctness.
